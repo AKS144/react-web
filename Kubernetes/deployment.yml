@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: reactwebsite
+  labels:
+    app: reactwebsite
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: reactwebsite
+  template:
+    metadata:
+      labels:
+        app: reactwebsite
+    spec:
+      terminationGracePeriodSeconds: 30
+      containers:
+      - name: reactwebsite
+        image: abhi144k/reactwebsite:latest
+        imagePullPolicy: "Always"
+        ports:
+        - containerPort: 3000
