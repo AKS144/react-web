@@ -14,7 +14,7 @@ function Home(){
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 mb-5 text-center">
-                            <h3 className="main-heading">My Company</h3>
+                            <h3 className="main-heading">My iii Company</h3>
                             <div className="underline mx-auto"></div>
                             <p>Lorem Ipsum is simply dummy 
                                 text of the printing and typesetting industry. 
